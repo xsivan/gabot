@@ -6,7 +6,7 @@
 > 
 >  ***Fully customizable Discord server moderation bot for your Discord server that includes simple commands for using and setting up the boot***
 > 
->  ###### *Functionalities*
+>  #### *Functionalities*
 > - Reaction roles
 > - Twich notifications 
 > - Youtube notifications
@@ -20,7 +20,7 @@
 
 
 ---
-- [x] *GaBot is Open source project in python*
+- *GaBot is Open source project in python*
 ---
 
 ## *How to install Gabot with Docker*
