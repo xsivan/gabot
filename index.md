@@ -338,7 +338,7 @@ This command will return a list of all set notification parameters for the guild
 ### *set_api_url*
 > `-notify set_api_url [args...] `
 
-This command is used for setting the parameter Api URL (URL we will request for data). If the parameter is already set, his value will be updated. Set URL must start with HTTP:// or „HTTPS:“.
+This command is used for setting the parameter Api URL (URL we will request for data). If the parameter is already set, his value will be updated. Set URL must start with "HTTP://" or "HTTPS://“.
 
 **Example**
 ```
