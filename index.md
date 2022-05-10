@@ -28,6 +28,7 @@
 What you need ?
 - Docker desktop with wsl2 container
 - run container via docker compose setup
+- `<path-to-config>` is docker-compose.yml 
 > `docker-compose <path-to-config> up -d python-slim-server`
 
 ---
