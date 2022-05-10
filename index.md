@@ -21,7 +21,8 @@
 
 ---
  *GaBot is Open source project in python*
-https://github.com/Kuchco/tp_discord_bot.git
+
+- [gabot.git](https://github.com/Kuchco/tp_discord_bot.git)
 
 ---
 
