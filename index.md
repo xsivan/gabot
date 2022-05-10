@@ -21,7 +21,7 @@
 
 ---
  *GaBot is Open source project in python*
- 
+
 ---
 
 ## *How to install Gabot with Docker*
@@ -45,13 +45,13 @@ Automatic notifications when a lecture or exercise stream starts and when a new 
 ---
 
 ### *Q&A System*
-People in dedicated channels can ask questions, vote for them (by responses). The voting results are displayed in Discord threads. If the question is answered, it can be "archived", i.e. moved to another designated channels.
+People in dedicated channels can ask questions, and vote for them (by responses). The voting results are displayed in Discord threads. If the question is answered, it can be "archived", i.e. moved to another designated channel.
 
 ---
 
 ### *Deadlines*
 
-Functionality is focused on creating deadlines for credits, projects, assignments and any other events. In addition, you can cancel any date or view all active dates.
+Functionality is focused on creating deadlines for credits, projects, assignments, and any other events. In addition, you can cancel any date or view all active dates.
 
 ---
 
@@ -119,7 +119,7 @@ Command to ```enable | disable``` reactions roles on your server. After executin
 ### *channel*
 > `-rr channel [channel]`
 
-Command to set up a channel where bot displays the option to select roles by responding to **```emoji```**. 
+Command to set up a channel where the bot displays the option to select roles by responding to **```emoji```**. 
 If you do not specify a **```channel```**, the bot will list the role selection to the channel you are in.
 
 **Example**
@@ -236,7 +236,7 @@ Use these commands to turn Twitch and youtube notifications on and off.
 > `-yt status`
 > `-tw status`
 
-Use these commands to find out if you have twich and youtube notifications on or off.
+Use these commands to find out if you have twitch and youtube notifications on or off.
 
 ---
 
@@ -251,7 +251,7 @@ Commands to display all commands for the Q&A system.
 > `-q [create|c] <question>`
 
 Command to create a question. The created question will be displayed in the active thread.
-Creates new question, wrap question into ==" "== for question with spaces.
+Creates new question, wrap question into " " for question with spaces.
 
 **Example**
 ```
@@ -264,7 +264,7 @@ Creates new question, wrap question into ==" "== for question with spaces.
 ### *answer*
 > `-q [answer|a] <answer>`
 
-The command is usable only inside active question thread. Wrap answer into ==" "== for question with spaces.
+The command is used only inside the active question thread. Wrap answer into " " for question with spaces.
 Answers (resolves) question. 
 
 **Example**
@@ -278,7 +278,7 @@ Answers (resolves) question.
 ### *remove*
 > `-q [remove|r|delete|d] `
 
-Removes question.The command is usable only inside active question thread. 
+Removes question. The command is used only inside the active question thread. 
 
 **Example**
 ```
@@ -293,9 +293,9 @@ Removes question.The command is usable only inside active question thread.
 ### *answer-emoji-marked*
 > `-q [aem|answer-emoji-marked] :emoji: `
 
-Scans all messages with a given emoji from the solver of the question in thread and takes them as an answer.
-The command is usable only inside active question thread. 
-After answering, the question is automatically deleted from the channel with active threads and moved to the archive and sent to the author in the DM.
+Scans all messages with a given emoji from the solver of the question in the thread and takes them as an answer.
+The command is used only inside the active question thread. 
+After answering, the question is automatically deleted from the channel with active threads and moved to the archive, and sent to the author in the DM.
 
 **Example**
 
@@ -309,7 +309,7 @@ After answering, the question is automatically deleted from the channel with act
 > `-question | q`
 
 Commands to display all commands for Notifications.
-***Beware***. Every command mentioned below is secured by specific validation. User is unable to run command if params or situation if not suitable for them. User will be also notified what error made, and how to fix it.
+***Beware***. Every command mentioned below is secured by specific validation. The user is unable to run a command if params or situation is not suitable for them. Users will be also notified of what error was made, and how to fix it.
 
 ---
 
@@ -323,7 +323,7 @@ Command to display all commands for notify/scheduler actions.
 ### *params_info*
 > `-notify params_info `
 
-This command  will return list of all set notify parameter for guild, from which is this command called. If some parameter is not set, his value will be „empty“.
+This command will return a list of all set notification parameters for the guild, from which is this command called. If some parameter is not set, his value will be „empty“.
 
 **Example**
 ```
@@ -335,7 +335,7 @@ This command  will return list of all set notify parameter for guild, from which
 ### *set_api_url*
 > `-notify set_api_url [args...] `
 
-This command is used for setting parameter Api url (url we will request for data). If parameter is already set, his value will be updated. Set url must start with http:// or „https:“.
+This command is used for setting the parameter Api URL (URL we will request for data). If the parameter is already set, his value will be updated. Set URL must start with HTTP:// or „HTTPS:“.
 
 **Example**
 ```
@@ -347,7 +347,7 @@ This command is used for setting parameter Api url (url we will request for data
 ### *set_requests_time_minutes*
 > `-notify set_requests_time_minutes [minutes] `
 
-Command is used for setting requesting interval value in minutes. If parameter is already set, his value will be updated. Value can contain only numbers and value must be >= 1.
+The command is used for setting requesting interval values in minutes. If the parameter is already set, his value will be updated. Value can contain only numbers and the value must be >= 1.
 
 **Example**
 ```
@@ -359,7 +359,7 @@ Command is used for setting requesting interval value in minutes. If parameter i
 ### *set_requests_subject_shortcut*
 > `-notify set_requests_subject_shortcut [args...] `
 
-Command is used for setting shortcut of wanted subject. Parameter is used to filter obtained data throu request. Used value must have length at least 1.
+The command is used for setting shortcuts to the wanted subject. The parameter is used to filter obtained data through request. The used value must have a length of at least 1.
 
 **Example**
 ```
@@ -371,7 +371,7 @@ Command is used for setting shortcut of wanted subject. Parameter is used to fil
 ### *add_notify_info_channels*
 > `-notify add_notify_info_channels [args...] `
 
-Command is used for setting array of infromation channels (channels where we post info about new’s obtained throu request). Input must contain at least one channel that belongs under guild, from which is this command called (but can contain more of them).
+The command is used for setting an array of information channels (channels, where we post info about news, obtained through request). Input must contain at least one channel that belongs under guild, from which is this command called (but can contain more of them).
 
 **Example**
 ```
@@ -383,7 +383,7 @@ Command is used for setting array of infromation channels (channels where we pos
 ### *remove_notify_info_channels*
 > `-notify remove_notify_info_channels [args...] `
 
-This command is used to remove already set info channels. You can remove one or more of them. Input must contain at least one channel, and channel must be already in array of set info channels.
+This command is used to remove already set info channels. You can remove one or more of them. Input must contain at least one channel, and the channel must be already in an array of set info channels.
 
 **Example**
 ```
@@ -395,7 +395,7 @@ This command is used to remove already set info channels. You can remove one or 
 ### *add_notify_system_error_channels*
 > `-notify add_notify_system_error_channels [args...] `
 
-Command is used for setting array of system error log channels (channels where we post occured system error). Input must contain at least one channel that belongs under guild, from which is this command called (but can contain more of them).
+The command is used for setting an array of system error log channels (channels where we post occurred system error). Input must contain at least one channel that belongs under guild, from which is this command called (but can contain more of them).
 
 **Example**
 ```
@@ -407,7 +407,7 @@ Command is used for setting array of system error log channels (channels where w
 ### *remove_notify_system_error_channels*
 > `-notify remove_notify_system_error_channels [args...] `
 
-This command is used to remove already set system error channels. You can remove one or more of them. Input must contain at least one channel, and channel must be already in array of set system error channels.
+This command is used to remove already set system error channels. You can remove one or more of them. Input must contain at least one channel, and the channel must be already in an array of set system error channels.
 
 **Example**
 ```
@@ -419,7 +419,7 @@ This command is used to remove already set system error channels. You can remove
 ### *set_start_stop_requesting*
 > `-notify set_start_stop_requesting [args...] `
 
-Command is used to start or stop requesting Api url for this particular guild, from which is this command called. Note, that if you want to start requesting there is one condition. Every notify parameter must be already set (not „empty“). To start requesting use parameter true and to stop false.
+The command is used to start or stop requesting API URL for this particular guild, from which is this command called. Note, that if you want to start requesting there is one condition. Every notify parameter must be already set (not „empty“). To start requesting use parameter true and to stop false.
 
 **Example**
 ```
