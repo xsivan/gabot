@@ -20,7 +20,7 @@
 
 
 ---
-- [x] *GaBot is Open source project in python*
+ *GaBot is Open source project in python*
 ---
 
 ## *How to install Gabot with Docker*
