@@ -6,7 +6,7 @@
 > 
 >  ***Fully customizable Discord server moderation bot for your Discord server that includes simple commands for using and setting up the boot***
 > 
->  ###### *Functionalities*
+>  *Functionalities*
 > - Reaction roles
 > - Twich notifications 
 > - Youtube notifications
@@ -24,7 +24,10 @@
 ---
 
 ## *How to install Gabot with Docker*
-> ...
+What you need ?
+- Docker desktop with wsl2 container
+- run container via docker compose setup
+> `docker-compose <path-to-config> up -d python-slim-server`
 
 ---
 ## *Introduction*
@@ -36,12 +39,12 @@ Reaction roles allow you to easily add roles to teams on your discord server.
 --- 
 
 ### *Twitch and Youtube notifications*
-Automatic notifications when a lecture or exercise stream starts and when it is published new video on Youtube from the subject.
+Automatic notifications when a lecture or exercise stream starts and when a new video is published on Youtube from the subject.
 
 ---
 
 ### *Q&A System*
-People in dedicated channels can ask questions, vote for them (by responses). The voting results are displayed in Discord threads. If the question is answered, it can be "archived", i.e. moved to another, designated,channels.
+People in dedicated channels can ask questions, vote for them (by responses). The voting results are displayed in Discord threads. If the question is answered, it can be "archived", i.e. moved to another designated channels.
 
 ---
 
@@ -64,12 +67,12 @@ Automatic notifications for subject page notifications.
 ## *Commands* 
 ---
 
-#### *Prefix*
+### *Prefix*
 > **Bot** has a prefix dash **-**
 
 ---
 
-#### *Help* 
+### *Help* 
 > 
 > `-help | h`
 
@@ -91,7 +94,7 @@ He has other commands
 
 ---
 
-#### *Reaction roles*
+### *Reaction roles*
 
 > `-reaction_roles | rr`
 
@@ -100,7 +103,7 @@ This command is used with other functions for reaction roles.
 
 ---
 
-##### *toggle*
+### *toggle*
 > `-rr toggle`
 
 Command to ```enable | disable``` reactions roles on your server. After executing the command bot sends a message to the channel that you have enabled reaction roles.
@@ -112,7 +115,7 @@ Command to ```enable | disable``` reactions roles on your server. After executin
 
 ---
 
-##### *channel*
+### *channel*
 > `-rr channel [channel]`
 
 Command to set up a channel where bot displays the option to select roles by responding to **```emoji```**. 
@@ -127,7 +130,7 @@ If you do not specify a **```channel```**, the bot will list the role selection 
 
 ---
 
-##### *add*
+### *add*
 > `-rr add <emoji> <role>`
 
 The command is used to **```add```** a **```role```** under a specific **```emoji```** to reaction roles.
@@ -139,7 +142,7 @@ The command is used to **```add```** a **```role```** under a specific **```emoj
 
 ---
 
-##### *remove*
+### *remove*
 > `-rr remove <emoji>`
 
 The command is used to **```delete```** roles from reaction roles.
@@ -151,7 +154,7 @@ The command is used to **```delete```** roles from reaction roles.
 
 ---
 
-#### *Deadline*
+### *Deadline*
 
 > `-deadline | dl`
 
@@ -159,7 +162,7 @@ Commands to display all commands for deadline functionality.
 
 ---
 
-##### *create*
+### *create*
 > `-dl create <name> [args...]`
 
 This command is used to create a **```deadline```**.
@@ -172,7 +175,7 @@ In the form `-dl create` **```[deadlin name]```** **```[dd / mm / yy HH / MM / S
 
 ---
 
-##### *edit*
+### *edit*
 > `-dl edit <name> [args...]`
 
 The command is used to **```change```** deadline settings.
@@ -185,14 +188,14 @@ The command is used to **```change```** deadline settings.
 
 ---
 
-##### *showall*
+### *showall*
 > `-dl showall`
 
 The command displays a list of all active deadlines.
 
 ---
 
-##### *end*
+### *end*
 > `-dl end <deadline_name>`
 
 The command is used to **```cancel```** the deadline.
@@ -204,14 +207,14 @@ The command is used to **```cancel```** the deadline.
 
 ---
 
-##### *endall*
+### *endall*
 > `-dl endall`
 
 The command is used to **```cancel```** all deadlines.
 
 ---
 
-#### *Youtube and Twitch*
+### *Youtube and Twitch*
 
 > `-youtube | yt`
 > `-twitch | tw`
@@ -220,7 +223,7 @@ Commands to display all commands for youtube and twich functionality.
 
 ---
 
-##### *toggle*
+### *toggle*
 > `-yt toggle`
 > `-tw toggle`
 
@@ -228,7 +231,7 @@ Use these commands to turn Twitch and youtube notifications on and off.
 
 ---
 
-##### *status*
+### *status*
 > `-yt status`
 > `-tw status`
 
@@ -236,14 +239,14 @@ Use these commands to find out if you have twich and youtube notifications on or
 
 ---
 
-#### *Q&A System*
+### *Q&A System*
 > `-question | q`
 
 Commands to display all commands for the Q&A system.
 
 ---
 
-##### *create*
+### *create*
 > `-q [create|c] <question>`
 
 Command to create a question. The created question will be displayed in the active thread.
@@ -257,7 +260,7 @@ Creates new question, wrap question into ==" "== for question with spaces.
 
 ---
 
-##### *answer*
+### *answer*
 > `-q [answer|a] <answer>`
 
 The command is usable only inside active question thread. Wrap answer into ==" "== for question with spaces.
@@ -271,7 +274,7 @@ Answers (resolves) question.
 
 ---
 
-##### *remove*
+### *remove*
 > `-q [remove|r|delete|d] `
 
 Removes question.The command is usable only inside active question thread. 
@@ -286,7 +289,7 @@ Removes question.The command is usable only inside active question thread.
 
 ---
 
-##### *answer-emoji-marked*
+### *answer-emoji-marked*
 > `-q [aem|answer-emoji-marked] :emoji: `
 
 Scans all messages with a given emoji from the solver of the question in thread and takes them as an answer.
@@ -301,7 +304,7 @@ After answering, the question is automatically deleted from the channel with act
 
 ---
 
-#### *Notifications*
+### *Notifications*
 > `-question | q`
 
 Commands to display all commands for Notifications.
@@ -309,14 +312,14 @@ Commands to display all commands for Notifications.
 
 ---
 
-##### *notify*
+### *notify*
 > `-[notify|sn]  `
 
 Command to display all commands for notify/scheduler actions.
 
 ---
 
-##### *params_info*
+### *params_info*
 > `-notify params_info `
 
 This command  will return list of all set notify parameter for guild, from which is this command called. If some parameter is not set, his value will be „empty“.
@@ -328,7 +331,7 @@ This command  will return list of all set notify parameter for guild, from which
 
 ---
 
-##### *set_api_url*
+### *set_api_url*
 > `-notify set_api_url [args...] `
 
 This command is used for setting parameter Api url (url we will request for data). If parameter is already set, his value will be updated. Set url must start with http:// or „https:“.
@@ -340,7 +343,7 @@ This command is used for setting parameter Api url (url we will request for data
 
 ---
 
-##### *set_requests_time_minutes*
+### *set_requests_time_minutes*
 > `-notify set_requests_time_minutes [minutes] `
 
 Command is used for setting requesting interval value in minutes. If parameter is already set, his value will be updated. Value can contain only numbers and value must be >= 1.
@@ -352,7 +355,7 @@ Command is used for setting requesting interval value in minutes. If parameter i
 
 ---
 
-##### *set_requests_subject_shortcut*
+### *set_requests_subject_shortcut*
 > `-notify set_requests_subject_shortcut [args...] `
 
 Command is used for setting shortcut of wanted subject. Parameter is used to filter obtained data throu request. Used value must have length at least 1.
@@ -364,7 +367,7 @@ Command is used for setting shortcut of wanted subject. Parameter is used to fil
 
 ---
 
-##### *add_notify_info_channels*
+### *add_notify_info_channels*
 > `-notify add_notify_info_channels [args...] `
 
 Command is used for setting array of infromation channels (channels where we post info about new’s obtained throu request). Input must contain at least one channel that belongs under guild, from which is this command called (but can contain more of them).
@@ -376,7 +379,7 @@ Command is used for setting array of infromation channels (channels where we pos
 
 ---
 
-##### *remove_notify_info_channels*
+### *remove_notify_info_channels*
 > `-notify remove_notify_info_channels [args...] `
 
 This command is used to remove already set info channels. You can remove one or more of them. Input must contain at least one channel, and channel must be already in array of set info channels.
@@ -388,7 +391,7 @@ This command is used to remove already set info channels. You can remove one or 
 
 ---
 
-##### *add_notify_system_error_channels*
+### *add_notify_system_error_channels*
 > `-notify add_notify_system_error_channels [args...] `
 
 Command is used for setting array of system error log channels (channels where we post occured system error). Input must contain at least one channel that belongs under guild, from which is this command called (but can contain more of them).
@@ -400,7 +403,7 @@ Command is used for setting array of system error log channels (channels where w
 
 ---
 
-##### *remove_notify_system_error_channels*
+### *remove_notify_system_error_channels*
 > `-notify remove_notify_system_error_channels [args...] `
 
 This command is used to remove already set system error channels. You can remove one or more of them. Input must contain at least one channel, and channel must be already in array of set system error channels.
@@ -412,7 +415,7 @@ This command is used to remove already set system error channels. You can remove
 
 ---
 
-##### *set_start_stop_requesting*
+### *set_start_stop_requesting*
 > `-notify set_start_stop_requesting [args...] `
 
 Command is used to start or stop requesting Api url for this particular guild, from which is this command called. Note, that if you want to start requesting there is one condition. Every notify parameter must be already set (not „empty“). To start requesting use parameter true and to stop false.
@@ -424,14 +427,14 @@ Command is used to start or stop requesting Api url for this particular guild, f
 
 ---
 
-#### *Adding and Tracking points*
+### *Adding and Tracking points*
 > `-pts`
 
 Commands to display all commands for adding and tracking points.
 
 ---
 
-##### *show*
+### *show*
 > `-pts show `
 
 Reading points of a specific user from the database and listing points in the format 'Points': {number of points}.
@@ -443,7 +446,7 @@ Reading points of a specific user from the database and listing points in the fo
 
 ---
 
-##### *add*
+### *add*
 > `-pts add [user] [points] `
 
 Command to easily add points for a specific user directly using the discord bot.
@@ -455,7 +458,7 @@ Command to easily add points for a specific user directly using the discord bot.
 
 ---
 
-##### *API_URL*
+### *API_URL*
 
 A link to an API to which you can make a POST request for points
 
